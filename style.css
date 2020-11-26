@@ -1,4 +1,4 @@
-body { 
+body {
 font-family: serif; 
 }
 
@@ -10,19 +10,19 @@ background: grey;
 
 .nav a {
 color: white;
-padding:15px 10px;
+padding: 15px 10px;
 text-decoration: none;
 text-align: center;
 }
 
-@media all and (max-width: 800px) {
-.nav { 
-justify-content: space-around; 
+@media all and (min-width: 800px) {
+.nav {
+justify-content: center; 
+}
 }
 
-.nav a{ 
-flex-grow:2;
-}
+.nav a{
+flex-grow: 1;
 }
 
 @media all and (max-width: 600px) {
@@ -33,7 +33,7 @@ display: none;
 }
 
 @media all and (max-width: 600px) {
-.hamburger {
+.burger {
      position: relative;
      display: block;
      width: 50px;
@@ -42,8 +42,8 @@ display: none;
      border-top: 5px solid black;
      border-bottom: 5px solid black;
 }
-.hamburger:before {
-     content: "";
+.burger::before {
+     content: '';
      position: absolute;
      top: 10px;
      left: 0px;
@@ -51,28 +51,22 @@ display: none;
      border-top: 5px solid black;
 }
 }
-
-
-@media (min-width: 1000px) {
-  .nav {
-    font-size: 48px;
-    }
+@media (min-width: 600px) {
+.nav {
+font-size: 12px; 
 }
 
 @media (min-width: 800px) {
-  .nav {
-    font-size: 36px;
-    }
+.nav {
+font-size: 24px; 
 }
 
-@media (min-width: 480px) {
-  .nav {
-    font-size: 24px;
-    }
+@media (min-width: 1000px) {
+.nav {
+font-size: 36px; 
 }
 
-@media (min-width: 320px) {
-  .nav {
-    font-size: 12px;
-    }
+@media (min-width: 1200px) {
+.nav {
+font-size: 48px; 
 }
